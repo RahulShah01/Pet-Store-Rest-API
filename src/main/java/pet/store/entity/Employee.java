@@ -33,6 +33,6 @@ public class Employee {
   @ToString.Exclude
   @ManyToOne(cascade = CascadeType.ALL)
   @JoinColumn(name = "pet_store_id")
-  private PetStore petStore = new PetStore();
+  private PetStore petStore;
 
 }
